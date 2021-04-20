@@ -1,0 +1,24 @@
+{
+  "name": "project-101-looplab-social-theme",
+  "version": "1.0.0",
+  "description": "Boostrap landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salman-Farshe/LoopLab.git"
+  },
+  "author": "Salman Farshe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salman-Farshe/LoopLab/issues"
+  },
+  "homepage": "https://github.com/Salman-Farshe/LoopLab#readme",
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^5.0.0"
+  }
+}
