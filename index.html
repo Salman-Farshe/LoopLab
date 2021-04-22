@@ -286,11 +286,47 @@
                <div class="col text-center py-4">
                    <h5>LoopLab</h5>
                    <p>copy &copy; <span id="year"></span> All Right Reserved</p>
-                    
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">Contact Us</button>
                 </div>
            </div>
        </div>
    </footer>
+
+   <!-- contact section -->
+   <div id="contact" class="modal fade text-dark">
+       <div class="modal-dialog">
+           <div class="modal-content">
+
+               <div class="modal-header">
+                   <h5 class="modal-title">Contact Us</h5>
+                   <button class="close p-1" data-dismis="modal">
+                       <span>
+                           &times;
+                       </span>
+                   </button>
+               </div>
+               <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="20" rows="5" class="form-control"></textarea>
+                        </div>
+                    </form>
+               </div>
+               <div class="modal-footer">
+                   <button class="btn btn-primary w-100">Submit</button>
+               </div>
+           </div>
+       </div>
+   </div>
 
 
     <!-- fontawesome webfont -->
@@ -303,6 +339,10 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- main js file -->
-   
+
+    <script>
+        // get the current year for footer section
+        $('#year').text(new Date().getFullYear());
+    </script>
 </body>
 </html>
