@@ -19,10 +19,10 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
 
     <!-- navigation section -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
             <a href="index.html" class="navbar-brand">LoopLab</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -339,6 +339,11 @@
     <script>
         // get the current year for footer section
         $('#year').text(new Date().getFullYear());
+
+        // scroll spy
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example' });
+
     </script>
 </body>
 </html>

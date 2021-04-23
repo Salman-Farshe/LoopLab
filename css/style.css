@@ -12,6 +12,10 @@ html, body {
   color: #fff;
   scroll-behavior: smooth; }
 
+body {
+  position: relative;
+  height: 100%; }
+
 .navbar {
   border-bottom: 3px solid #008ed6;
   opacity: 0.8; }
